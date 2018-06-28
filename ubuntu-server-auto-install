@@ -85,6 +85,9 @@ kickstart-cfg()
 		  kernel /install/vmlinuz
 		  append file=/cdrom/preseed/ubuntu-server.seed initrd=/install/initrd.gz ks=cdrom:/ks.cfg preseed/file=/cdrom/ks.preseed --
 	EOF
+    if expr match "$1" ".*18.04.*"; then
+        sed -i $1/isolinux/isolinux.cfg -e 's|/install|/casper|'
+    fi
 	cat > $1/ks.cfg <<- EOF
 		lang en_US.UTF-8
 		keyboard us
