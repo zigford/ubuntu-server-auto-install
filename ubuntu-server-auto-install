@@ -60,7 +60,7 @@ ubuntu-server-auto-install()
 	chroot /target update-grub
 	%end
 	EOF
-	mkisofs -q -disable-deep-relocation -rational-rock -cache-inodes -joliet \
+	mkisofs -quiet -disable-deep-relocation -rational-rock -cache-inodes -joliet \
 		-full-iso9660-filenames -no-emul-boot -boot-load-size 4 -boot-info-table \
 		-eltorito-boot isolinux/isolinux.bin -eltorito-catalog isolinux/boot.cat \
 		-o $auto.iso $auto
