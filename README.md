@@ -2,7 +2,7 @@
 
 Creates any Ubuntu server unattended installation iso
 
-Tested in Ubuntu server versions 12.04 14.04 15.04 16.04 16.10 17.04
+Tested in Ubuntu server versions 12.04 14.04 15.04 16.04 16.10 17.04 18.04
 
 Features:
 
