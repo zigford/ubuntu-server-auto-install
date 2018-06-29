@@ -88,7 +88,7 @@ subiquity-cfg()
     sudo unsquashfs -n -d "$squashfs/squash" "$1"/casper/filesystem.squashfs > /dev/null
     rm "$1"/casper/filesystem.squashfs
     sudo mkdir "$squashfs"/squash/subiquity_config
-    sudo tee "$squashfs"/squash/subiquity_config/answers.yaml > /dev/null <<-EOF
+    sudo tee "$squashfs"/squash/subiquity_config/answers.yaml > /dev/null <<-'EOF'
         Welcome:
           lang: en_US
         Keyboard:
