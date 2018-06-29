@@ -10,10 +10,11 @@ Features:
 * Downloads available Ubuntu server release from releases.ubuntu.com
 * Stores and used downloaded images in ~/Downloads
 * By default uses the latest release
-* Creates kickstart configuration for automatic (unattended) installation
-* Alters grub configuration
-* Creates default (sudoer) user as current user with password as username
-* Copies ssh public key of current user
+* Creates kickstart configuration for automatic (unattended) installation on 17.10 and earlier
+* Creates a subiquity configuration for installation on 18.04 and later
+* Alters grub configuration for <=17.10
+* Creates default (sudoer) user as current user with password as username for <= 17.10
+* Copies ssh public key of current user for <= 17.10
 * Short - about 100 lines of code, easy modifiable
 * Helps to run installation with qemu
 * Suitable for batch installation
